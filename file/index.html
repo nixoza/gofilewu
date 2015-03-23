@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Download Blue Eye Macro Automation - Filewu.com</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pygment_trac.css">
+    <script src="../js/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script language="javascript">
+
+function randomFromTo(from,to)
+{
+       var numb = Math.floor(Math.random() * (to - from + 1) + from);
+	   return numb;
+}
+
+function todayDate()
+{
+var d=new Date();
+var YY=d.getFullYear().toString().substring(0,4)
+d=d.toString().split(' ')
+var DD=Number(d[2])<10?'0'+d[2]:d[2];
+var MON=d[1].toUpperCase().replace(/,/g,'');
+var todayDate=DD+'-'+MON+'-'+YY;
+document.write('<div class="table-date">'+ todayDate +'</div>');
+} 
+
+
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
+
+addLoadEvent(function() {
+
+    var a1=[1,7,14,5,13,12,16,20,2,9,3,4,19,15,8,17,10,6,11,18];
+	var a2=[15,12,7,3,19,16,5,18,4,8,11,10,20,13,9,1,2,6,14,17];
+	var a3=[5,17,4,20,15,3,2,6,18,12,9,13,14,19,10,8,7,11,16,1];
+	var a4=[3,7,14,6,1,10,20,17,5,11,16,18,19,4,9,2,15,12,8,13];
+	var a5=[17,4,3,1,13,18,12,9,20,2,15,14,8,16,19,7,11,10,5,6];
+	var a6=[8,9,7,6,19,14,15,2,3,4,11,12,20,13,18,5,17,10,1,16];
+	var a7=[2,17,15,7,4,8,16,9,20,10,1,18,11,13,6,12,5,14,3,19];
+  //func1(); 
+  //func2();
+    
+  	var t1=setTimeout("document.getElementById('status').innerHTML=' <b> <img src=\"../img/av-loading.gif\"> Analyzing... </b>'",2500);
+	var t2=setTimeout("document.getElementById('status').innerHTML='<b>Scan finished</b>'",10500);
+	var t2=setTimeout("document.getElementById('result1').innerHTML='Detection ratio: '",10700);
+	var t2=setTimeout("document.getElementById('result').innerHTML='<b><font color=\"#22cc22\">0 / 20</font></b>'",10700);
+	var t2=setTimeout("document.getElementById('download').innerHTML='<a href=\"#\"> <div class=\"download-button\"> <p> Download </p> </div> </a>'",10700);
+	
+	
+  
+	for(var i=0;i<20;i++)
+	{ 
+		var t1=setTimeout("document.getElementById('"+a1[i]+"').innerHTML='<img src=\"../img/avloading.gif\" width=\"95\" height=\"10\">'",randomFromTo(2500,3500));
+	}
+		for(var i=0;i<20;i++)
+	{ 
+		var t1=setTimeout("document.getElementById('"+a1[i]+"').innerHTML='<div class=\"found-nothing\"><img src=\"../img/good.png\" /></div>'",randomFromTo(6000,10000));
+	}
+});
+
+
+</script>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="without-description">
+        <h1>Gofilewu</h1>
+        <p></p>
+        <p class="view"><a href="https://github.com/nixoza/gofilewu">View the Project on GitHub <small>nixoza/gofilewu</small></a></p>
+        <ul>
+          <li><a href="https://github.com/nixoza/gofilewu/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/nixoza/gofilewu/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/nixoza/gofilewu">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<div id="scan-status">
+<!-- start of file-info-box-->
+<div id="file-info-box">
+	<table cellspacing="5" class="scanner">
+	<tr valign="top"><td>Status: </td><td id="status"><b>Requesting scan...</b></td></tr>
+    <tr valign="top"><td>File name: </td><td> file_name.exe</td></tr>
+	<tr valign="top"><td>Analysis date: </td><td></td></tr>
+	<tr valign="top"><td>Detection ratio: </td><td id="result"></td></tr>
+	</table>
+</div> 
+<!-- end of file-info-box -->
+
+<!-- start of download button -->
+<div id="download">
+
+</div> 
+<!-- end of download button -->
+
+</div>
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a id="rather-drive-stick" class="anchor" href="#rather-drive-stick" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Project maintained by <a href="https://github.com/nixoza">nixoza</a></p>
+      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
+    </footer>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
